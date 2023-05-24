@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="card card2 position-relative">
+        <div class="card-body">
+            <h1 class= "heading2 position-relative">Add</h1>
+
+            <form method= "POST">
+            {{ form_label(form.brand, 'Brand', {'label_attr': {'class': 'position-relative formLabel1'}}) }}
+            {{ form_widget(form.brand, {'attr': {'class': 'position-relative formRow1'}}) }}
+            {{ form_label(form.model, 'Model', {'label_attr': {'class': 'position-relative formLabel2'}}) }}
+            {{ form_widget(form.model, {'attr': {'class': 'position-relative formRow2'}}) }}
+            {{ form_label(form.fuel_type, 'Fuel Type', {'label_attr': {'class': 'position-relative formLabel3'}}) }}
+            {{ form_widget(form.fuel_type, {'attr': {'class': 'position-relative formRow3'}}) }}
+            {{ form_label(form.price, 'Price', {'label_attr': {'class': 'position-relative formLabel4'}}) }}
+            {{ form_widget(form.price, {'attr': {'class': 'position-relative formRow4'}}) }}
+            {{ form_widget(form.submit, {'attr': {'class': 'button2 btn btn-primary position-relative', 'style': 'font-family: Nokia Pure Text, sans-serif;'}}) }}
+           {{ form_end(form) }}
+            </form>
+
+            <a href="{{ path('Home') }}"><button type="button" class="button2 btn btn-secondary position-relative">Return</button></a>
+        </div>
+    </div>
+
+{% endblock %}

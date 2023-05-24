@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="card3 card position-relative">
+        <div class="card-body">
+            <h1 class= "heading3 position-relative">Detail</h1>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Fuel type</th>
+                    <th scope="col">Price</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>{{ truck.FuelType }}</td>
+                    <td>{{ truck.price }}</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <a href="{{ path('Home') }}"><button type="button" class="button4 btn btn-secondary position-relative">Return</button></a>
+        </div>
+    </div>
+
+{% endblock %}

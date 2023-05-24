@@ -1,0 +1,129 @@
+html, body {
+    background-image: url("/Pictures/Western_Auto_Wallpaper.jpg");
+    background-size: 1280px;
+}
+
+@font-face {
+    font-family: 'Nokia Pure Text';
+    url('/Fonts/Nokia Pure Text/Nokia Pure Text.ttf')
+}
+
+html, body, h1, h2, h3, h4, h5, h6, p, i, a, td, tr, .button2, .formLabel1, .formLabel2, .formLabel3, .formLabel4 {
+    font-family: "Nokia Pure Text", sans-serif;
+}
+
+.card1 {
+    height: 500px !important;
+    width: 550px;
+    top: 90px;
+    left: 370px;
+    border-radius: 20px;
+    margin-right: 0;
+    font-family: "Nokia Pure Text";
+}
+
+.heading1 {
+    top: 0px;
+    left: 150px;
+}
+
+.table>:not(caption)>*>* {
+    border: hidden;
+}
+
+.button1 {
+    top: 10px;
+    left: 210px;
+}
+
+.card2 {
+    height: 550px !important;
+    width: 500px;
+    top: 100px;
+    left: 400px;
+}
+
+.heading2 {
+    top: 15px;
+left: 187px;
+}
+
+.button2 {
+    top: 180px;
+    left: 140px;
+}
+
+.formRow1 {
+    top: 38px;
+    left: 36px;
+    width: 400px;
+}
+
+.formLabel1 {
+    top: 30px;
+    left: 205px;
+    width: 400px;;
+}
+
+.formRow2 {
+    top: 80px;
+    left: 38px;
+    width: 400px;
+}
+
+.formLabel2 {
+    top: 70px;
+    left: 205px;
+    width: 400px;
+}
+
+.formRow3 {
+    top: 122px;
+    left: 38px;
+    width: 400px;
+}
+
+.formLabel3 {
+    top: 110px;
+    left: 195px;
+    width: 400px;
+}
+
+.formRow4 {
+    top: 160px;
+    left: 38px;
+    width: 400px;
+}
+
+.formLabel4 {
+    top: 150px;
+    left: 210px;
+    width: 400px;
+}
+
+.button3 {
+    top: 142px;
+    left: 230px;
+}
+
+.card3 {
+    height: 250px !important;
+    width: 500px;
+    top: 190px;
+    left: 400px;
+}
+
+.heading3 {
+    top: 15px;
+    left: 187px;
+}
+
+.button4 {
+    top: 20px !important;
+    left: 200px;
+}
+
+
+
+
+

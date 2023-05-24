@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% for message in app.flashes('success') %}
+        <div class="alert alert-success">
+            {{ message }}
+        </div>
+    {% endfor %}
+
+
+    <div class="card card1 position-relative">
+        <div class="card-body">
+         <h1 class= "heading1 position-relative">Western Auto</h1>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Brand</th>
+                    <th scope="col">Model</th>
+                </tr>
+                </thead>
+                <tbody>
+                 {% for truck in trucks %}
+                <tr>
+                   <td>{{ truck.brand }}</td>
+                    <td>{{ truck.model }}</td>
+                    <td>
+                    <a href= "{{ path('Detail', {'id': truck.id}) }}"><button type="button" class="btn btn-primary">Detail</button></a>
+                    <a href= "{{ path('Edit', {'id': truck.id}) }}"> <button type="button" class="btn btn-warning text-light">Edit</button></a>
+                    <a href= "{{ path('Delete', {'id': truck.id}) }}"><button type="button" class="btn btn-danger">Delete</button></a>
+                </tbody>
+                </td>
+                    <tr>
+                {% endfor %}
+            </table>
+            <a href= "{{ path('Add') }}"><button type="button" class="btn btn-success button1 position-relative">Add truck</button></a>
+        </div>
+    </div>
+
+{% endblock %}
